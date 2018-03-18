@@ -1,0 +1,14 @@
+{
+	"private": true,
+	"name": "@tolosa/core",
+	"version": "1.0.0",
+	"main": "build/commonjs/index.js",
+	"jsnext:main": "build/es6/index.js",
+	"module": "build/es6/index.js",
+	"types": "build/commonjs/index.d.ts",
+	"typescript:source": "src/index.ts",
+	"files": [
+		"build",
+		"src"
+	]
+}

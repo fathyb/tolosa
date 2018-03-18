@@ -1,0 +1,16 @@
+{
+ "name": "@tolosa/test-parcel",
+ "private": true,
+ "version": "0.0.1",
+ "main": "src/test.html",
+ "dependencies": {
+  "@tolosa/core": "^1.0.0",
+  "@tolosa/most": "^1.0.0",
+  "axios": "^0.17.1"
+ },
+ "devDependencies": {
+  "@tolosa/transform-typescript": "^1.0.0",
+  "parcel-bundler": "^1.6.1",
+  "parcel-plugin-typescript": "0.8.0-next.0"
+ }
+}

@@ -1,0 +1,39 @@
+{
+	"private": true,
+	"author": {
+		"name": "Fathy Boundjadj",
+		"email": "fathy.boundjadj@gmail.com",
+		"url": "https://github.com/fathyb"
+	},
+	"workspaces": [
+		"examples/*",
+		"packages/*",
+		"packages/support/*",
+		"packages/transform/*",
+		"website"
+	],
+	"scripts": {
+		"build": "gulp --gulpfile config/gulpfile.js",
+		"test": "jest --config config/jest/conf.json",
+		"lint": "tslint --project config/tsconfig.json --config config/tslint.json"
+	},
+	"devDependencies": {
+		"@types/common-tags": "^1.4.0",
+		"@types/jest": "^22.1.3",
+		"common-tags": "^1.7.2",
+		"del": "^3.0.0",
+		"gulp": "^4.0.0",
+		"gulp-sourcemaps": "^2.6.4",
+		"gulp-typescript": "^4.0.1",
+		"jest": "^22.3.0",
+		"most": "^1.7.3",
+		"rxjs": "^5.5.6",
+		"ts-jest": "^22.0.4",
+		"tslint": "^5.9.1",
+		"tslint-eslint-rules": "^5.0.0",
+		"typescript": "^2.7.2"
+	},
+	"dependencies": {
+		"parcel-plugin-typescript": "^0.7.0"
+	}
+}

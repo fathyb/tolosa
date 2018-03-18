@@ -1,0 +1,14 @@
+{
+	"private": true,
+	"name": "@tolosa/transform-typescript",
+	"version": "1.0.0",
+	"main": "build/commonjs/index.js",
+	"types": "build/commonjs/index.d.ts",
+	"files": [
+		"build",
+		"src"
+	],
+	"devDependencies": {
+		"@types/node": "^9.4.6"
+	}
+}

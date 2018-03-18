@@ -1,0 +1,12 @@
+{
+	"extends": "../../../config/tsconfig.json",
+	"compilerOptions": {
+		"outDir": "build",
+
+		// See https://github.com/ReactiveX/rxjs/issues/3031
+		"skipLibCheck": true
+	},
+	"include": [
+		"src/**/*.ts"
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"rootDir": "../..",
+	"transform": {
+		".ts": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+	},
+	"testRegex": "__tests__/[^/]+\\.spec\\.ts$",
+	"moduleFileExtensions": ["js", "json", "ts"],
+	"coverageDirectory": "<rootDir>/build/coverage",
+	"collectCoverageFrom": [
+		"**/*.ts", "!**/*.d.ts", "!**/*.type.ts",
+		"!**/__tests__/*.ts"
+	],
+	"modulePathIgnorePatterns": ["/build/", "/yarn-cache/"],
+	"testPathIgnorePatterns": ["/build/", "/yarn-cache/", "/node_modules/"],
+	"testEnvironment": "jsdom",
+	"resolver": "<rootDir>/config/jest/resolve",
+	"globals": {
+      	"ts-jest": {
+			"tsConfigFile": "config/tsconfig.json"
+	  	},
+		"__TS_CONFIG__": {
+			"target": "es6"
+		}
+    }
+}

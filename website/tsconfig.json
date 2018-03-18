@@ -1,0 +1,23 @@
+{
+	"extends": "../config/tsconfig.json",
+	"compilerOptions": {
+		"rootDir": "src",
+		"outDir": "build",
+		"target": "es6",
+		"module": "esnext",
+
+		"importHelpers": true,
+		"sourceMap": true,
+		"jsx": "preserve",
+		"types": [
+			"@tolosa/core"
+		]
+	},
+	"include": [
+		"src/**/*.tsx"
+	],
+	"parcel-plugin-typescript": {
+		"transformers": "./src/parcel.transform",
+		"useTypeScriptAST": true
+	}
+}

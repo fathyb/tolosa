@@ -1,0 +1,14 @@
+{
+	"private": true,
+	"name": "@tolosa/most",
+	"version": "1.0.0",
+	"main": "build/commonjs/index.js",
+	"jsnext:main": "build/es6/index.js",
+	"module": "build/es6/index.js",
+	"types": "build/commonjs/index.d.ts",
+	"typescript:source": "src/index.ts",
+	"peerDependencies": {
+		"@tolosa/core": "^1.0.0",
+		"most": "^1.7.3"
+	}
+}

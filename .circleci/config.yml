@@ -1,0 +1,34 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:9
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - dependencies-{{ checksum "yarn.lock" }}
+          # fallback to using the latest cache if no exact match is found
+          - dependencies-
+      - run:
+          name: Install
+          command: yarn --cache-folder yarn-cache
+      - save_cache:
+          paths:
+            - yarn-cache
+          key: dependencies-{{ checksum "yarn.lock" }}
+      - run:
+          name: Lint
+          command: yarn lint
+      - run:
+          name: Build
+          command: yarn build
+      - run:
+          name: Test
+          command: yarn test --coverage --bail
+
+workflows:
+  version: 2
+  build_test_and_lint:
+    jobs:
+      - build

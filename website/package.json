@@ -1,0 +1,25 @@
+{
+ "name": "@tolosa/website",
+ "version": "0.0.1",
+ "private": true,
+ "main": "src/index.html",
+ "scripts": {
+  "serve": "parcel"
+ },
+ "dependencies": {
+  "@tolosa/core": "^1.0.0",
+  "@tolosa/most": "^1.0.0",
+  "axios": "^0.17.1",
+  "monaco-editor": "^0.11.1"
+ },
+ "devDependencies": {
+  "@tolosa/transform-typescript": "^1.0.0",
+  "html-webpack-plugin": "^3.0.6",
+  "parcel-bundler": "^1.6.2",
+  "parcel-plugin-typescript": "^0.7.0",
+  "ts-loader": "^4.1.0",
+  "webpack": "^4.1.1",
+  "webpack-cli": "^2.0.12",
+  "webpack-dev-server": "^3.1.1"
+ }
+}
